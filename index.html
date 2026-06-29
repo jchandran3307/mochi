@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mochi — The cute desktop companion for Windows. A tiny friend that walks, sleeps, eats, and keeps you company." />
+  <title>Mochi — The Desktop Companion You'll Fall in Love With</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Rounded, modern typography -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background blobs -->
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+
+  <!-- Floating particles -->
+  <div class="particles" aria-hidden="true" id="particles"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">
+        <span class="nav-logo-mark">●</span>
+        <span class="nav-logo-text">Mochi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#pricing" class="nav-cta">Buy Mochi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="pill">✨ A tiny friend for your desktop</span>
+        <h1 class="hero-title">
+          Meet <span class="accent">Mochi</span><br />
+          The Desktop Companion<br />
+          You'll Fall in Love With.
+        </h1>
+        <p class="hero-sub">
+          A cute desktop pet that walks around your screen, naps in the corner,
+          munches on fish, and quietly keeps you company — all while sipping
+          barely any CPU.
+        </p>
+        <div class="hero-ctas">
+          <a href="#pricing" class="btn btn-primary">
+            <span>Buy Mochi — $3</span>
+            <span class="btn-ripple"></span>
+          </a>
+          <a href="#gallery" class="btn btn-secondary">
+            <span class="btn-icon">▶</span>
+            Watch Preview
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>🪟 Windows</span>
+          <span> Lightweight</span>
+          <span>🔒 Offline</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-image-wrap" id="heroImage">
+          <img
+            src="images/mochi-eating.png"
+            alt="Mochi happily eating a fish"
+            class="hero-image"
+          />
+        </div>
+        <div class="hero-fish" aria-hidden="true">
+          <img src="images/mochi-eating.png" alt="" class="hero-fish-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- SOCIAL PROOF -->
+  <section class="proof">
+    <div class="proof-inner">
+      <div class="proof-item"><span class="proof-icon">⚡</span> Lightweight</div>
+      <div class="proof-item"><span class="proof-icon">🌸</span> Cute</div>
+      <div class="proof-item"><span class="proof-icon">🔐</span> Privacy Friendly</div>
+      <div class="proof-item"><span class="proof-icon">📶</span> Offline</div>
+      <div class="proof-item"><span class="proof-icon"></span> No Ads</div>
+      <div class="proof-item"><span class="proof-icon">💳</span> One-Time Purchase</div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-header reveal">
+      <span class="eyebrow">Features</span>
+      <h2 class="section-title">Little things.<br />Big joy.</h2>
+      <p class="section-sub">
+        Mochi is packed with thoughtful details — every animation, every
+        interaction, crafted to make your day a little brighter.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <article class="feature-card reveal">
+        <div class="feature-icon"></div>
+        <h3>Walks Around</h3>
+        <p>Mochi strolls across your desktop, exploring windows and peeking at your work.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">💤</div>
+        <h3>Sleeps Peacefully</h3>
+        <p>When idle, Mochi curls up and takes a cozy nap — complete with floating Z's.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">🐟</div>
+        <h3>Eats Fish</h3>
+        <p>Drop a fish and watch Mochi happily munch away. The cutest snack break ever.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">✨</div>
+        <h3>Cute Idle Animations</h3>
+        <p>Blinks, tail wags, little yawns — Mochi is always alive with personality.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">️</div>
+        <h3>Right-Click Interactions</h3>
+        <p>Pet, feed, or play with Mochi through a simple, delightful context menu.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">🎬</div>
+        <h3>Smooth Animations</h3>
+        <p>Every movement is buttery 60fps — no jank, no stutter, just pure charm.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon"></div>
+        <h3>Featherlight</h3>
+        <p>Runs at under 1% CPU. Mochi respects your machine while stealing your heart.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">🚫</div>
+        <h3>No Ads. Ever.</h3>
+        <p>No tracking, no popups, no nonsense. Just you and your tiny companion.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">❤️</div>
+        <h3>Made With Love</h3>
+        <p>Crafted by an independent developer who genuinely cares about your experience.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-header reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section-title">Four moods.<br />One tiny friend.</h2>
+      <p class="section-sub">
+        Every state of Mochi — from playful to peaceful — designed with care.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-card reveal">
+        <div class="gallery-bg"></div>
+        <img src="images/mochi-idle.png" alt="Mochi sitting idle" class="gallery-img" />
+        <figcaption>
+          <span class="gallery-label">Idle</span>
+          <span class="gallery-desc">Quietly watching you work</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-card reveal">
+        <div class="gallery-bg"></div>
+        <img src="images/mochi-walking.png" alt="Mochi walking happily" class="gallery-img" />
+        <figcaption>
+          <span class="gallery-label">Walking</span>
+          <span class="gallery-desc">Exploring your desktop</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-card reveal">
+        <div class="gallery-bg"></div>
+        <img src="images/mochi-sleeping.png" alt="Mochi sleeping peacefully" class="gallery-img" />
+        <figcaption>
+          <span class="gallery-label">Sleeping</span>
+          <span class="gallery-desc">Curled up for a cozy nap</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-card reveal">
+        <div class="gallery-bg"></div>
+        <img src="images/mochi-eating.png" alt="Mochi eating a fish" class="gallery-img" />
+        <figcaption>
+          <span class="gallery-label">Eating</span>
+          <span class="gallery-desc">Munching on a fresh fish</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-copy reveal">
+        <span class="eyebrow">About Mochi</span>
+        <h2 class="section-title">More than software.<br />A tiny companion.</h2>
+        <p>
+          Working late? Coding through the night? Studying for an exam?
+          Sometimes all you need is a small, warm presence beside you —
+          something that makes the screen feel a little less lonely.
+        </p>
+        <p>
+          Mochi was built for those quiet moments. For designers staring at
+          pixels, developers chasing bugs, writers chasing words. A soft
+          reminder that you're not alone at your desk.
+        </p>
+        <div class="about-tags">
+          <span>Working</span>
+          <span>Coding</span>
+          <span>Studying</span>
+          <span>Designing</span>
+          <span>Late nights</span>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-glow"></div>
+        <img src="images/mochi-idle.png" alt="Mochi keeping you company" class="about-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MOCHI -->
+  <section class="why">
+    <div class="section-header reveal">
+      <span class="eyebrow">Why Mochi</span>
+      <h2 class="section-title">A desktop with<br />a heartbeat.</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card why-without reveal">
+        <span class="why-label">Without Mochi</span>
+        <ul>
+          <li><span>—</span> Empty, quiet desktop</li>
+          <li><span>—</span> Feels lonely at night</li>
+          <li><span>—</span> No personality</li>
+          <li><span>—</span> Just another screen</li>
+        </ul>
+      </div>
+
+      <div class="why-card why-with reveal">
+        <span class="why-label">With Mochi</span>
+        <ul>
+          <li><span>+</span> A cute companion always nearby</li>
+          <li><span>+</span> Interactive & responsive</li>
+          <li><span>+</span> Relaxing, calming presence</li>
+          <li><span>+</span> Your desktop feels alive</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPER STORY -->
+  <section class="dev-story">
+    <div class="dev-inner reveal">
+      <span class="eyebrow">Independent</span>
+      <h2 class="section-title">Support Independent<br />Developers ❤️</h2>
+      <p>
+        Every purchase directly supports the continued development of Mochi.
+        Your support allows us to create new animations, more interactions,
+        future updates, and many more adorable moments.
+      </p>
+      <div class="dev-features">
+        <div><span>🎨</span> New animations</div>
+        <div><span>🎮</span> More interactions</div>
+        <div><span>🚀</span> Future updates</div>
+        <div><span></span> Adorable moments</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-header reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="section-title">One price.<br />Forever yours.</h2>
+      <p class="section-sub">
+        No subscriptions. No hidden fees. Just a tiny friend for the price of a coffee.
+      </p>
+    </div>
+
+    <div class="pricing-card reveal">
+      <div class="pricing-glow"></div>
+      <div class="pricing-badge">Best Value</div>
+      <h3 class="pricing-name">Mochi</h3>
+      <div class="pricing-price">
+        <span class="pricing-currency">$</span>
+        <span class="pricing-amount">3</span>
+      </div>
+      <p class="pricing-note">One-time purchase · Lifetime access</p>
+
+      <ul class="pricing-features">
+        <li>✅ Full Mochi desktop pet</li>
+        <li>✅ All current animations</li>
+        <li>✅ Future updates included</li>
+        <li>✅ No subscriptions, ever</li>
+        <li>✅ Works offline</li>
+        <li>✅ No ads, no tracking</li>
+      </ul>
+
+      <a href="#" class="btn btn-primary btn-large">
+        <span>Buy Mochi — $3</span>
+        <span class="btn-ripple"></span>
+      </a>
+      <p class="pricing-guarantee">🔒 Secure checkout · Instant download</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-header reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Questions?<br />We've got answers.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Does Mochi slow down my PC?</summary>
+        <p>Not at all. Mochi is engineered to run at under 1% CPU and uses minimal RAM. You'll barely notice it's there — until you look and smile.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>How do I install it?</summary>
+        <p>After purchase, you'll receive a simple installer. Run it, and Mochi appears on your desktop instantly. No accounts, no sign-ups, no hassle.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Will more animations be added?</summary>
+        <p>Yes! We're constantly working on new animations, interactions, and seasonal surprises. All future updates are included with your one-time purchase.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Can I update later?</summary>
+        <p>Absolutely. Updates are delivered automatically through the app. Just launch Mochi and you'll always have the latest version.</p>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Is it safe?</summary>
+        <p>100%. Mochi is a lightweight, offline desktop app with no network calls, no telemetry, and no ads. Your privacy is fully respected.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo-mark">●</span>
+        <span class="nav-logo-text">Mochi</span>
+      </div>
+      <p class="footer-copy">
+        Made with ❤️ by independent developers.
+      </p>
+      <p class="footer-legal">
+        © 2026 Mochi. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
